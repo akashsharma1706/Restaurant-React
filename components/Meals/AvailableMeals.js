@@ -5,35 +5,35 @@ import classes from './AvailableMeals.module.css';
 const DUMMY_MEALS = [
   {
     id: 'm1',
-    name: 'Sushi',
-    description: 'Finest fish and veggies',
-    price: 22.99,
+    name: 'Burger',
+    description: 'Every Bite, a Burst of Happiness!',
+    price: 149,
   },
   {
     id: 'm2',
-    name: 'Schnitzel',
-    description: 'A german specialty!',
-    price: 16.5,
+    name: 'Pizza',
+    description: 'Slice into Happiness!',
+    price: 349,
   },
   {
     id: 'm3',
-    name: 'Barbecue Burger',
-    description: 'American, raw, meaty',
-    price: 12.99,
+    name: 'White Sauce Pasta',
+    description: 'Extra spicy, extra delicious!',
+    price: 299,
   },
   {
     id: 'm4',
-    name: 'Green Bowl',
-    description: 'Healthy...and green...',
-    price: 18.99,
+    name: 'Tacos',
+    description: 'Wrap Yourself in Flavor!',
+    price: 199,
   },
 ];
 
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
-      id={meal.id}
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}
